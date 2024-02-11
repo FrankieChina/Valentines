@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../static/styles.css">
     <script>
         const noButton = document.getElementById("noBtn");
-const yesButton = document.getElementById("heart:after");
+const yesButton = document.getElementById("Yes");
 const questionStr = document.getElementById("question");
 const myList = ["Sure?", "Are you Pretty Fuckin sure??", "Please?", "Pretty please?", "Come on!","Think again!"];
 let yesWidth = 250;
@@ -34,12 +34,9 @@ function noBtnClickEvent(obj) {
   size = size + 50
   padding = padding + 25
 }
-
-function yesBtnClickEvent() {
-
-}
-
-
+        function YesBtnClickEvent(obj){
+          window.location.href = "{{url_for('accepted')}}";
+        }
 
 
         </script>
@@ -51,8 +48,8 @@ function yesBtnClickEvent() {
             <h2 id="question" class="questionStr" style="color:white;">Will you be my Valentine?</h2>
         </div>
         <div class="m-4">
-            <button class="heartbutton" id="Yes"  style="top:57%;left:%;z-index:99;border:none;background:transparent;" ><a>Yes</a></button>
-            <div class="heartbutton" id="heart" onclick="yesBtnClickEvent()"></div>
+            <button class="heartbutton" id="Yes"  style="top:57%;left:%;z-index:99;border:none;background:transparent;" onclick="YesBtnClickEvent()" ><a>Yes</a></button>
+            <div class="heartbutton" id="heart" ></div>
             <div class="no_btn" id="no_text" >💔</div>
             <button class="no_btn" id="noBtn" style="top:55%;left:50%;z-index:99;border:none;background:transparent;" onclick="noBtnClickEvent(this)" >No</button>
 

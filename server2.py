@@ -7,7 +7,13 @@ app = Flask(__name__)
 @app.route("/")
 def hello_world():
     current_year = datetime.datetime.now().year
-    return render_template("Home.html", current_year=current_year)
+    return render_template("Home.html")
+
+
+
+@app.route("/accepted")
+def accepted():
+    return render_template("accepted.html",)
 
 
 

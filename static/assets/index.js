@@ -22,10 +22,4 @@ function noBtnClickEvent(obj) {
   padding = padding + 25
 }
 
-function yesBtnClickEvent() {
-  yesButton.style.width = String(yesWidth) + "px"
-  yesButton.style.height = String(yesHeight) + "px"
-  yesButton.style.paddingTop = String(yesPadding) + "px"
-  questionStr.innerHTML = "Ok Yaaaay !!!";
-  noButton.innerHTML = "I knew it !";
-}
+

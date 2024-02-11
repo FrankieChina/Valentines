@@ -10,6 +10,11 @@
     background-image: url("valentines.jpg");
 }
 
+.layer2 {
+    background-image: url("valentines_drop.gif");
+}
+
+
 .container{
     margin-top: 300px;
 }

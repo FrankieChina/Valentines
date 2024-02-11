@@ -36,11 +36,7 @@ function noBtnClickEvent(obj) {
 }
 
 function yesBtnClickEvent() {
-  yesButton.style.width = String(yesWidth) + "px"
-  yesButton.style.height = String(yesHeight) + "px"
-  yesButton.style.paddingTop = String(yesPadding) + "px"
-  questionStr.innerHTML = "Ok Yaaaay !!!";
-  noButton.innerHTML = "I knew it !";
+
 }
 
 
@@ -55,7 +51,7 @@ function yesBtnClickEvent() {
             <h2 id="question" class="questionStr" style="color:white;">Will you be my Valentine?</h2>
         </div>
         <div class="m-4">
-            <div class="heartbutton" id="Yes" ><a>Yes</a></div>
+            <button class="heartbutton" id="Yes"  style="top:57%;left:%;z-index:99;border:none;background:transparent;" ><a>Yes</a></button>
             <div class="heartbutton" id="heart" onclick="yesBtnClickEvent()"></div>
             <div class="no_btn" id="no_text" >💔</div>
             <button class="no_btn" id="noBtn" style="top:55%;left:50%;z-index:99;border:none;background:transparent;" onclick="noBtnClickEvent(this)" >No</button>

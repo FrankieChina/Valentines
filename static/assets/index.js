@@ -1,5 +1,5 @@
 const noButton = document.getElementById("noBtn");
-const yesButton = document.getElementById("heart");
+const yesButton = document.getElementById("heart:after");
 const questionStr = document.getElementById("question");
 const myList = ["Sure?", "Are you Pretty Fuckin sure??", "Please?", "Pretty please?", "Come on!","Think again!"];
 let yesWidth = 250;
